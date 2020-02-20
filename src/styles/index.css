@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  border: 1px solid lightgrey;
+  width: 400px;
+}
+
+.contacts {
+  display: flex;
+  width: 400px;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.peeps {
+  padding: 25px;
+  background: rgb(107, 196, 23);
+  width: 400px;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.fullname {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  color: grey;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.smallpic {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.contactcard {
+  display: flex;
+  flex-direction: column;
+  left: 300px;
+  position: absolute;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  padding: 20px;
+}
+
+.singlegreen {
+  background: rgb(154, 215, 108);
+  width: 400px;
+  padding: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.singlegreen img {
+  border-radius: 50%;
+}
+
+.backbutton {
+  position: absolute;
+}
+
+.cardtext {
+  padding: 20px;
+  line-height: 2;
+  border-bottom: 1px lightgrey solid;
+}
