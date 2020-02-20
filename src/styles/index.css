@@ -79,4 +79,10 @@ code {
   padding: 20px;
   line-height: 2;
   border-bottom: 1px lightgrey solid;
+  border: 1px lightgrey solid;
+}
+
+.cardtext p {
+  border-bottom: 1px lightgrey solid;
+  padding: 10px;
 }

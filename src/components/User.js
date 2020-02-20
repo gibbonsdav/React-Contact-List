@@ -1,10 +1,11 @@
 import React from "react"
-// import { Router } from "react-router-dom"
+import { Link } from "react-router-dom"
 import data from "./data.json"
 import { FaUserAlt } from "react-icons/fa"
 import { IoMdMail } from "react-icons/io"
-// import { AiOutlineMobile } from "react-icons/io"
-import { IoMdArrowBack } from "react-icons/fa"
+import { AiOutlineMobile } from "react-icons/ai"
+import { IoMdArrowBack } from "react-icons/io"
+import { FaGlobeAmericas } from "react-icons/fa"
 
 export default function(props) {
   const id = props.match.params.id
@@ -28,18 +29,19 @@ export default function(props) {
           {user.email}
         </p>
         <p>
-          {/* {" "} */}
-          {/* <AiOutlineMobile /> */}
+          {" "}
+          <AiOutlineMobile />
           {user.cell}
         </p>
         <p>
+          <FaGlobeAmericas />
           {user.location.city}, {user.location.state}
         </p>
       </div>
       <button className="backbutton">
-        <a href="http://localhost:3000/">
-          <img alt="arrow" src="<IoMdArrowBack />"></img>
-        </a>
+        <Link to="/">
+          <img alt="arrow" src={IoMdArrowBack}></img>
+        </Link>
       </button>
     </div>
   )
