@@ -1,6 +1,10 @@
 import React from "react"
 // import { Router } from "react-router-dom"
 import data from "./data.json"
+import { FaUserAlt } from "react-icons/fa"
+import { IoMdMail } from "react-icons/io"
+// import { AiOutlineMobile } from "react-icons/io"
+import { IoMdArrowBack } from "react-icons/fa"
 
 export default function(props) {
   const id = props.match.params.id
@@ -14,17 +18,28 @@ export default function(props) {
       </div>
       <div className="cardtext">
         <p>
+          {" "}
+          <FaUserAlt />
           {user.name.first} {user.name.last}{" "}
         </p>
 
-        <p>{user.email}</p>
-        <p>{user.cell}</p>
+        <p>
+          <IoMdMail />
+          {user.email}
+        </p>
+        <p>
+          {/* {" "} */}
+          {/* <AiOutlineMobile /> */}
+          {user.cell}
+        </p>
         <p>
           {user.location.city}, {user.location.state}
         </p>
       </div>
       <button className="backbutton">
-        <a href="http://localhost:3000/">Go Back</a>
+        <a href="http://localhost:3000/">
+          <img alt="arrow" src="<IoMdArrowBack />"></img>
+        </a>
       </button>
     </div>
   )
