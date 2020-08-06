@@ -11,7 +11,10 @@ export default function(props) {
   const id = props.match.params.id
 
   const user = data.find(userid => userid.id == id)
-
+  function back(e) {
+    e.preventDefault()
+    props.history.goBack()
+  }
   return (
     <div className="contactcard">
       <div className="singlegreen">
@@ -38,10 +41,8 @@ export default function(props) {
           {user.location.city}, {user.location.state}
         </p>
       </div>
-      <button className="backbutton">
-        <Link to="/">
-          <img alt="arrow" src={IoMdArrowBack}></img>
-        </Link>
+      <button onClick={back} className="backbutton">
+        <IoMdArrowBack />
       </button>
     </div>
   )

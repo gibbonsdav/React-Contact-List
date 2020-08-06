@@ -19,7 +19,7 @@ code {
 
 .contacts {
   display: flex;
-  width: 400px;
+  width: 380px;
   border-bottom: 1px solid lightgrey;
   padding: 10px;
   text-decoration: none;
@@ -85,4 +85,8 @@ code {
 .cardtext p {
   border-bottom: 1px lightgrey solid;
   padding: 10px;
+}
+
+svg {
+  margin-right: 10px;
 }
